@@ -2,7 +2,7 @@
   <mat-card>
     <mat-card-title style="text-align: center;"><h3>Store Inventory</h3></mat-card-title>
   </mat-card>
-  <mat-list role="list">
+  <mat-list role="list" id="store-items">
     <mat-list-item role="listitem" *ngFor="let item of toShowInv.getItems()">
       <mat-card>{{item.name}}, {{item.quantity}}</mat-card>
     </mat-list-item>
